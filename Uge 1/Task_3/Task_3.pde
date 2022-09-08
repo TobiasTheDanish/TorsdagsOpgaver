@@ -21,19 +21,20 @@ void setup()
 void draw()
 {
   background(255);
+  //Draws the rect in the background, in the middle of the screen.
   fill(background);
   rectMode(CENTER);
   rect(width/2, height/2, 250, 500);
   
   if (isTimerFinished() == true)
   {
-    redIsOn = !redIsOn;
-    savedTime = millis();
+    redIsOn = !redIsOn; //swaps between true and false values.
+    savedTime = millis(); //starts a new timer.
   }
   
-  drawSingleLight(width/2, height/2 - lightWidth - spacing, lightWidth, red, redIsOn);
-  drawSingleLight(width/2, height/2, lightWidth, yellow, yellowIsOn);
-  drawSingleLight(width/2, height/2 + lightWidth + spacing, lightWidth, green, !redIsOn);
+  drawSingleLight(width/2, height/2 - lightWidth - spacing, lightWidth, red, redIsOn); //draw red light
+  drawSingleLight(width/2, height/2, lightWidth, yellow, yellowIsOn); //draw yellow light
+  drawSingleLight(width/2, height/2 + lightWidth + spacing, lightWidth, green, !redIsOn);//draw green light
 }
 
 void drawSingleLight(float posX, float posY, float w, color c, boolean isOn)
@@ -52,5 +53,6 @@ void drawSingleLight(float posX, float posY, float w, color c, boolean isOn)
 
 boolean isTimerFinished()
 {
+  //If savedTime i less than millis() - timer, then time has run out.
   return savedTime < millis() - timer; 
 }

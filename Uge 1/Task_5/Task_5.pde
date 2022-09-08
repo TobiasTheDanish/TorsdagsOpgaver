@@ -47,7 +47,7 @@ void MethodTwo()
     weekend = true;
   }
   
-  // Print the name of the weekday here:
+  //Sets weekDayStr to correct value based on weekDay int (0-6).
   if (weekDay == 0)
   {
     weekDayStr = "monday";
@@ -81,6 +81,7 @@ void MethodTwo()
     println("Invalid value, weekDayStr is not defined"); 
   }
   
+  // Print the name of the weekday here:
   println("Today is " + weekDayStr);
     
     

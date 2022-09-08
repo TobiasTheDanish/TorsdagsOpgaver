@@ -5,6 +5,7 @@ String dont = "";
 
 void setup()
 { 
+  //Check if isHappy == true, then set the dont variable accordingly.
   if (isHappy)
   {
     dont = ""; 
