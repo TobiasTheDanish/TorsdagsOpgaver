@@ -21,6 +21,4 @@ void setup()
 }
 
 void draw()
-{
-  
-}
+{}
