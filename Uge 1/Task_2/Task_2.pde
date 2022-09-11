@@ -15,8 +15,8 @@ void setup()
     dont = "dont "; 
   }
   
-  println("Hi, my name is ", name);
-  println("I am", age, "years old");
+  println("Hi, my name is",name);
+  println("I am",age, "years old");
   println("I "+ dont + "clap my hands");
 }
 
