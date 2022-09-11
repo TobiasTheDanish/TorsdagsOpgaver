@@ -1,14 +1,5 @@
 void setup()
 {
-  //for loop that only prints even values from 0-20 (inclusive).
-  for (int i = 0; i <= 20; i++)
-  {
-    if (i%2 == 0)
-    {
-      println(i);
-    }
-  }
-
   //while loop that only prints even values from 0-20 (inclusive).
   {
     int i = 0;
@@ -19,6 +10,14 @@ void setup()
         println(i);
       }
       i++;
+    }
+  }
+  //for loop that only prints even values from 0-20 (inclusive).
+  for (int i = 0; i <= 20; i++)
+  {
+    if (i%2 == 0)
+    {
+      println(i);
     }
   }
 }
