@@ -27,27 +27,35 @@
  */
 
 void setup() {
+  //initialize variables
   int a = 7; 
   int b = 42;
-  int smaller = minimum(a,b);
   
+  
+  int smaller = minimum(a,b); //call the minimum function and save the returned value in a variable.
   if (smaller == a) 
   {
+    //If a is the smallest, print the following
     println(a + " is the smallest!");
   }
   else
   {
+    //else, print the following
     println(b + " is the smallest!"); 
   }
 }
 
 int minimum(int a, int b) {
+  //Initialises output variable.
   int smaller = 0;
   if (a < b) {
+    //a is the smaller number so its saved in smaller
     smaller = a;
   } 
   else {
+    //b is the smaller number so its saved in smaller
     smaller = b;
   }
+  //Return the smalles value
   return smaller;
 }
