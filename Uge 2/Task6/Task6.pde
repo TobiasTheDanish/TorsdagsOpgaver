@@ -33,11 +33,11 @@ void setup() {
   
   if (smaller == a) 
   {
-    println("a is the smallest!");
+    println(a + " is the smallest!");
   }
   else
   {
-    println("b is the smallest!"); 
+    println(b + " is the smallest!"); 
   }
 }
 
