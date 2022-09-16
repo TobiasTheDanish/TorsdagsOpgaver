@@ -7,4 +7,6 @@ void setup()
   println(teacher.name);
   println(studentOne.name + " from team " + studentOne.datamatikerTeam);
   println(studentTwo.name + " from team " + studentTwo.datamatikerTeam);
+  
+  println(studentOne);
 }

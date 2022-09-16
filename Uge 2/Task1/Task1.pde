@@ -2,7 +2,9 @@ void setup()
 {
    printEmpty();
    printString("Hello");
+   printEmpty();
    printNameAndAge("Tobias", 24);
+   printEmpty();
 }
 
 void printEmpty()
