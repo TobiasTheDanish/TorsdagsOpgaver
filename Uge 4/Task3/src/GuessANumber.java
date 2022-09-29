@@ -15,7 +15,6 @@ public class GuessANumber {
         makeAGuess();
  	}
 
-
     private static void makeAGuess(){
 		// Create a Scanner object
     	// Read user input
