@@ -1,0 +1,36 @@
+@startuml
+
+class Building {
+    - ArrayList<Room> rooms
+    - int numberOfBathrooms
+    - int numberOfFloors
+    - boolean isOfficeBuilding
+
+    + Building(ArrayList<Room> rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding)
+    + ArrayList<Room> getRooms()
+    + int getNumberOfBathrooms()
+    + int getNumberOfFloors()
+}
+
+class Room {
+    - int numberOfDoors
+    - int numberOfLamps
+    - int numberOfWindows
+
+    + Room(int numberOfDoors, int numberOfLamps, int numberOfWindows)
+    + int getNumberOfDoors()
+    + int getNumberOfLamps()
+    + int getNumberOfWindows()
+}
+
+class Main {
+    + static void main(String[] args)
+    + static int countLampsInBuilding(Building building)
+    + static boolean isNormal(Building building)
+}
+
+Main -- Building
+Main -- Room
+Building "list of" *-- Room
+
+@enduml
